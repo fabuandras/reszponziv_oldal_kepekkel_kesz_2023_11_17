@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#responsive {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+#fejlec {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+#menu {
+    border: 1px solid grey;
+    padding: 0px;
+    margin-top: 1px;
+    height: 30px;
+}
+
+#article {
+    border: 1px solid grey;
+    padding: 10px;
+    margin-top: 1px;
+}
+
+#section1 {
+    border: 1px solid grey;
+    padding: 10px;
+    margin-top: 2px;
+}
+
+#section2 {
+    border: 1px solid grey;
+    padding: 10px;
+    margin-top: 2px;
+}
+
+#mainbgcolor {
+    background-color: rgb(248, 244, 221)
+}
+
+main {
+    width: 70%;
+	margin: auto;
+}
+
+#indexkep {
+    width: 100%;
+}
+
+#kepek {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.box {
+    text-align: center;
+    border-radius: 5px;
+    padding: 0px;
+    font-size: 150%;
+}
+
+#width {
+    width: 100%;
+    border: 1px solid grey;
+    padding: 2px;
+    margin-top: 0px;
+}
+
+/* menü kialakítása */
+
+#activeli {
+    background-color: red;
+}
+
+#activea {
+    color: white;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    list-style-type: none;
+    margin-top: 0px;
+    height: 30px;
+    width: 100%;
+}
+
+nav li {
+    text-align: center;
+    padding: 5px;
+    background-color:lightgrey;
+    border: 1px solid grey;
+}
+
+
+nav li a {
+    text-decoration: none;
+    color:red;
+}
+
+/*nav li:hover {
+    background-color: red;
+}*/
+
+/* tablet nézet */
+@media screen and (max-width: 800px) {
+    nav ul {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0px;
+		list-style-type: none;
+		margin-top: 0px;
+		height: 30px;
+		width: 60%;
+	}
+	
+	#kepek {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/* mobil nézet */
+@media screen and (max-width: 450px) {
+    nav ul {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0px;
+		list-style-type: none;
+		margin-top: 0px;
+		height: 30px;
+		width: 100%;
+	}
+	
+	#kepek {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 1fr;
+	}
+}
